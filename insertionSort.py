@@ -1,14 +1,6 @@
-def main():
-    a = [31, 41, 59, 26, 41, 58]
-
-    b = insertionsort(a)
-    for j in range(0, len(b)):
-        print(b[j])
-
-
 def insertionsort(array):
     key = 0
-    i = 0
+    i = 0 # index for array
     for j in range(0, len(array)):
         key = array[j]
         i = j - 1
@@ -21,4 +13,6 @@ def insertionsort(array):
     return array
 
 
-main()
+arrayTest = [31, 41, 59, 26, 41, 58]
+insertionsort(arrayTest)
+print(arrayTest)
